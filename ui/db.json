@@ -1,5 +1,71 @@
 {
-  "sedes": [],
+  "sedes": [
+    {
+      "id": "294c",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "93c1",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "f43b",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "a631",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "4f9b",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "1433",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "5bf2",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "6b45",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "8195",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "5762",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "4797",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "9dcf",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "7933",
+      "sede": "",
+      "extension": ""
+    }
+  ],
   "localidades": [],
   "items": [],
   "articulos": [],
