@@ -1,16 +1,35 @@
-import '@mantine/core/styles.css';
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import "@mantine/core/styles.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import { createTheme, MantineProvider } from '@mantine/core';
-import { Toaster } from 'react-hot-toast';
+import { MantineProvider } from "@mantine/core";
+import { Toaster } from "react-hot-toast";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SedesNew from "./pages/sedes-new";
+import SedesList from "./pages/sedes-list";
+import Layout from "./layout";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/sedes",
+        element: <SedesList />,
+      },
+      {
+        path: "/sedes/new",
+        element: <SedesNew />,
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <MantineProvider>
-      <App />
+      <RouterProvider router={router} />
       <Toaster />
     </MantineProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

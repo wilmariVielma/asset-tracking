@@ -1,23 +1,34 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { Button, Container, Input, Stack, Title } from "@mantine/core";
+import {
+  AppShell,
+  Button,
+  Container,
+  Image,
+  Input,
+  NavLink,
+  Stack,
+  Title,
+} from "@mantine/core";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
-function App() {
+function SedesNew() {
+  const navigate = useNavigate();
+
   const [sede, setSede] = useState("");
   const [extension, setExtension] = useState("");
 
   const manejarSubmit = () => {
     // Aquí se debe enviar la sede al backend
-    axios.post("http://localhost:3000/sedes", {sede, extension})
+    axios.post("http://localhost:3000/sedes", { sede, extension });
 
-    toast.success("¡Guardado con éxito!")
+    toast.success("¡Guardado con éxito!");
 
-    setSede("")
-    setExtension("")
+    setSede("");
+    setExtension("");
 
+    navigate("/sedes");
   };
 
   return (
@@ -30,9 +41,10 @@ function App() {
           onChange={(e) => setSede(e.target.value)}
         />
 
-        <Input placeholder="Escriba la extensión..." 
-        value={extension}
-        onChange={(e) => setExtension(e.target.value)}
+        <Input
+          placeholder="Escriba la extensión..."
+          value={extension}
+          onChange={(e) => setExtension(e.target.value)}
         />
 
         <Button onClick={manejarSubmit}>Guardar</Button>
@@ -41,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default SedesNew;
