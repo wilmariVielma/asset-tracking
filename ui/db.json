@@ -64,6 +64,21 @@
       "id": "7933",
       "sede": "",
       "extension": ""
+    },
+    {
+      "id": "f926",
+      "sede": "iutcm",
+      "extension": "merida"
+    },
+    {
+      "id": "bdde",
+      "sede": "iutcm",
+      "extension": "vigia"
+    },
+    {
+      "id": "ee29",
+      "sede": "ejido",
+      "extension": "aguas calientes"
     }
   ],
   "localidades": [],
